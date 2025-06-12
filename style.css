@@ -1,0 +1,488 @@
+/* ---------- Reset & Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  overflow-x: hidden;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+p {
+  color: #aaa;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Container Utility ---------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ---------- Navbar (Glassy, Profile, Dark Mode Toggle) ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-left: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.notify-btn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid #333;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.notify-btn:hover {
+  background: #1a1a1a;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f3f3f3;
+}
+
+.hero h1 span {
+  color: #ccc;
+}
+
+.hero p {
+  color: #aaa;
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+  font-size: 1rem;
+}
+
+/* ---------- Forms ---------- */
+.notify-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.notify-form input,
+.notify-form textarea {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: #1a1a1a;
+  color: #fff;
+  width: 300px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.notify-form textarea {
+  width: 100%;
+  max-width: 640px;
+}
+
+.notify-form button {
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  background: #e1ff00;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 10px #e1ff00;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notify-form button:hover {
+  background: #d4f900;
+  box-shadow: 0 0 20px #d4f900;
+}
+
+/* ---------- Section Base ---------- */
+.section {
+  padding: 4rem 1.5rem;
+  margin-top: 3rem;
+}
+
+/* ---------- Glassy Background Section ---------- */
+.glassy-section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+}
+
+/* ---------- Showcase Cards ---------- */
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #141414;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 300px;
+  max-width: 90%;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.card strong {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+/* ---------- Footer ---------- */
+.trusted-by {
+  padding: 3rem 1rem;
+  border-top: 1px solid #1d1d1d;
+  text-align: center;
+  background-color: #0d0d0d;
+}
+
+.trusted-by p {
+  color: #888;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.logo-row img {
+  height: 24px;
+  max-width: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-row img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* ---------- AOS Scroll Animation Styles ---------- */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Dark Mode ---------- */
+body[data-theme="dark"] {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body[data-theme="light"] {
+  background-color: #fff;
+  color: #333;
+}
+
+/* ---------- Chatbot Styles ---------- */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.chat-header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-box {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.bot-message {
+  background-color: #333;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.user-message {
+  background-color: #e1ff00;
+  color: #000;
+  align-self: flex-end;
+}
+
+.chat-input-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.chat-input-container input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+}
+
+.chat-input-container button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e1ff00;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+#close-chat {
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#show-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e1ff00;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#show-chat-button:hover {
+  background-color: #d4f900;
+}
+
+/* ---------- Responsive Tweaks ---------- */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .notify-form input {
+    width: 250px;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .notify-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .notify-form input,
+  .notify-form textarea,
+  .notify-form button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .notify-form input,
+  .notify-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .notify-form button {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .chat-container {
+    width: 95%;
+    right: 2.5%;
+  }
+}
+/* ---------- Fluid Typography ---------- */
+body {
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+p {
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+}
+
+.notify-form input,
+.notify-form textarea {
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+}
+
+.notify-form button {
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+}
+/* ---------- Fluid Card Animations ---------- */
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card {
+  animation: cardFadeIn 0.6s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.card:hover {
+  transform: scale(1.03) translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+}
