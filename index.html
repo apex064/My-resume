@@ -3,84 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Apex064 – Full stack Developer</title>
+  <title>Apex064 – Full Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- AOS Animation Library -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
+
   <!-- Header -->
   <header class="navbar" data-aos="fade-down">
     <div class="logo">✦</div>
     <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
     <nav class="nav-links">
-      <a href="#about" data-aos="fade-up">About</a>
-      <a href="#projects" data-aos="fade-up" data-aos-delay="100">Projects</a>
-      <a href="#testimonials" data-aos="fade-up" data-aos-delay="200">Testimonials</a>
-      <a href="#contact" data-aos="fade-up" data-aos-delay="300">Contact</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
     </nav>
-<a href="cv.pdf" download class="notify-btn" data-aos="fade-up" data-aos-delay="400">Download CV</a>
-
+    <a href="cv.pdf" download class="notify-btn">Download CV</a>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Design work, the<br><span>efficient way</span></h1>
-      <p>Innovative design solutions for technology firms and emerging businesses weary of the typical aesthetic methodology. Arriving
-shortly</p>
-
+  <section class="hero" id="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Design work,<br><span>the efficient way</span></h1>
+      <p>Innovative digital solutions for tech firms and startups tired of generic design.</p>
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="cv.pdf" class="btn-outline" download>Download CV</a>
+    </div>
   </section>
 
-  <!-- About Me Section -->
+  <!-- About Me -->
   <section id="about" class="section glassy-section">
     <h2 data-aos="fade-up">About Me</h2>
-    <p data-aos="fade-up" data-aos-delay="100">Hi, I'm Apex064 - a full-stack developer with over 3 years of experience crafting powerful, modern digital solutions.
-I specialize in backend development using Python and JavaScript, with hands-on expertise in Django, Flask, and Node.js. I also build sleek frontends using React and deliver clean, responsive web design. On top of that, I develop smooth, high-performance iOS apps using Swift and Xcode.
-Here's what I offer:
-Backend Development (Python, JavaScript, Django,
-Flask, Node.js)
-API Development & Integration (RESTful AP|s)
-Full-Stack Web Apps (React, HTML, CSS, Tailwind) iOS App Dev</p>
+    <p data-aos="fade-up" data-aos-delay="100">
+      Hi, I'm Apex064 — a full-stack developer with 3+ years of experience building high-performance digital products.
+      I specialize in Python, JavaScript, and iOS development, using tools like Django, Flask, Node.js, and React.
+      I also craft sleek, responsive frontends and develop iOS apps with Swift.
+    </p>
+    <ul class="skills-list" data-aos="fade-up" data-aos-delay="200">
+      <li>✓ Backend: Python, JavaScript, Django, Flask, Node.js</li>
+      <li>✓ API Integration: RESTful APIs</li>
+      <li>✓ Frontend: React, HTML, CSS, Tailwind</li>
+      <li>✓ Mobile: Swift, Xcode</li>
+    </ul>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="section">
-    <h2 data-aos="fade-up" data-aos-delay="200">Projects</h2>
+    <h2 data-aos="fade-up">Projects</h2>
     <div class="showcase">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="project10.png" alt="Ria Raspberry Hardware" />
+        <p>Hardware prototype for Ria (IoT personal assistant on Raspberry Pi)</p>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <img src="project2.png" alt="Custom Linux OS" />
+        <p>Custom OS (Linux-based, still in development)</p>
+      </div>
       <div class="card" data-aos="fade-up" data-aos-delay="300">
-        <img src="project10.png" alt="Project 1"/>
-        <p>hardware for ria rasberry{iot dev}</p>
+        <img src="project3.png" alt="Ria Python AI" />
+        <p>Ria AI: Python-based personal assistant bot</p>
       </div>
       <div class="card" data-aos="fade-up" data-aos-delay="400">
-        <img src="project2.png" alt="Project 2"/>
-        <p>costom os(linuxbased still in development)</p>
+        <img src="project4.png" alt="Enterprise Website" />
+        <p>Enterprise website design and dev</p>
       </div>
       <div class="card" data-aos="fade-up" data-aos-delay="500">
-        <img src="project3.png" alt="Project 3"/>
-        <p>ria rasberry{python based personal assistant ai}</p>
-      </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="600">
-        <img src="project4.png" alt="Project 4"/>
-        <p>enterprise website</p>
-      </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="600">
-        <img src="project5.png" alt="Project 4"/>
-        <p>apex weather (web based web app)</p>
+        <img src="project5.png" alt="Apex Weather" />
+        <p>Apex Weather: modern, responsive weather web app</p>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
+  <!-- Testimonials -->
   <section id="testimonials" class="section glassy-section">
-    <h2 data-aos="fade-up" data-aos-delay="700">Testimonials</h2>
+    <h2 data-aos="fade-up">Testimonials</h2>
     <div class="showcase">
-      <div class="card" data-aos="fade-up" data-aos-delay="800">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
         <p>“Apex064 delivered exactly what we needed — polished, performant, pixel-perfect.”</p>
-        <strong>- mattys inc</strong>
+        <strong>- Mattys Inc</strong>
       </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="900">
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
         <p>“His eye for design and attention to code structure made our product feel world-class.”</p>
         <strong>- Product Owner</strong>
       </div>
@@ -89,8 +93,8 @@ Full-Stack Web Apps (React, HTML, CSS, Tailwind) iOS App Dev</p>
 
   <!-- Contact Section -->
   <section id="contact" class="section">
-    <h2 data-aos="fade-up" data-aos-delay="1000">Contact</h2>
-    <form class="notify-form" data-aos="fade-up" data-aos-delay="1100">
+    <h2 data-aos="fade-up">Contact</h2>
+    <form class="notify-form" data-aos="fade-up" data-aos-delay="100">
       <input type="text" placeholder="Your name" required />
       <input type="email" placeholder="Your email" required />
       <textarea placeholder="Your message" rows="5" required></textarea>
@@ -98,7 +102,7 @@ Full-Stack Web Apps (React, HTML, CSS, Tailwind) iOS App Dev</p>
     </form>
   </section>
 
-  <!-- Chatbot Section -->
+  <!-- Chatbot -->
   <div class="chat-container" id="chat-container">
     <div class="chat-header">
       <span>Chat with me!</span>
@@ -112,63 +116,56 @@ Full-Stack Web Apps (React, HTML, CSS, Tailwind) iOS App Dev</p>
       <button id="send-message">Send</button>
     </div>
   </div>
-
-  <!-- Chatbot Toggle Button -->
   <button id="show-chat-button">💬</button>
 
-  <!-- Footer Section -->
-  <footer class="trusted-by" data-aos="fade-up" data-aos-delay="1200">
- <div class="logo-row">
-  <a href="https://github.com/apex064" target="_blank">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" />
-  </a>
-  <a href="https://www.linkedin.com/in/chima-chidiebere-sunday-a4117933b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" />
-  </a>
-  <a href="https://twitter.com/apex064" target="_blank">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/x.svg" alt="Twitter" />
-  </a>
-  <a href="https://codepen.io/apex064" target="_blank">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/codepen.svg" alt="Codepen" />
-  </a>
-</div>
-<p>© 2025 Apex064 – All rights reserved</p>
+  <!-- Footer -->
+  <footer class="trusted-by" data-aos="fade-up">
+    <div class="logo-row">
+      <a href="https://github.com/apex064" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/chima-chidiebere-sunday-a4117933b" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://twitter.com/apex064" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/x.svg" alt="Twitter" />
+      </a>
+      <a href="https://codepen.io/apex064" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/codepen.svg" alt="CodePen" />
+      </a>
+    </div>
+    <p>© 2025 Apex064 – All rights reserved</p>
+  </footer>
 
-</footer>
-
-
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true, offset: 200 });
-    
-    // Show/Hide Chatbot
-    document.getElementById('show-chat-button').addEventListener('click', function() {
-      var chatContainer = document.getElementById('chat-container');
-      chatContainer.style.display = (chatContainer.style.display === 'none' || chatContainer.style.display === '') ? 'flex' : 'none';
+
+    document.getElementById('show-chat-button').addEventListener('click', () => {
+      const chat = document.getElementById('chat-container');
+      chat.style.display = (chat.style.display === 'flex') ? 'none' : 'flex';
     });
-    
-    // Chatbot functionality
-    document.getElementById('send-message').addEventListener('click', function() {
-      var input = document.getElementById('chat-input').value;
-      if(input) {
-        var userMessage = document.createElement('div');
-        userMessage.classList.add('chat-message', 'user-message');
-        userMessage.textContent = input;
-        document.querySelector('.chat-box').appendChild(userMessage);
-        document.getElementById('chat-input').value = '';
-        
-        // Simulate bot response after a delay
-        setTimeout(function() {
-          var botResponse = document.createElement('div');
-          botResponse.classList.add('chat-message', 'bot-message');
-          botResponse.textContent = 'I am currently processing your request...';
-          document.querySelector('.chat-box').appendChild(botResponse);
+
+    document.getElementById('send-message').addEventListener('click', () => {
+      const input = document.getElementById('chat-input');
+      if (input.value.trim()) {
+        const userMsg = document.createElement('div');
+        userMsg.className = 'chat-message user-message';
+        userMsg.textContent = input.value;
+        document.querySelector('.chat-box').appendChild(userMsg);
+        input.value = '';
+
+        setTimeout(() => {
+          const botMsg = document.createElement('div');
+          botMsg.className = 'chat-message bot-message';
+          botMsg.textContent = 'I am currently processing your request...';
+          document.querySelector('.chat-box').appendChild(botMsg);
         }, 1500);
       }
     });
-    
-    // Close chat window
-    document.getElementById('close-chat').addEventListener('click', function() {
+
+    document.getElementById('close-chat').addEventListener('click', () => {
       document.getElementById('chat-container').style.display = 'none';
     });
   </script>
