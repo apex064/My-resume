@@ -401,6 +401,43 @@ a {
   }
 }
 
+/* ---------- Skills Grid ---------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+}
+
+.skill-item img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.5rem;
+  filter: invert(1);
+}
+
+.skill-item span {
+  font-size: 0.95rem;
+  color: #eee;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .hero h1 {
