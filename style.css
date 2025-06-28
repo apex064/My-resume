@@ -485,3 +485,12 @@ a {
     right: 2.5%;
   }
 }
+.card p img,
+.logo-row img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
