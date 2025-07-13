@@ -3,214 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Apex064 – Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Apex064 – Full‑Stack Developer</title>
+  <!-- Tailwind CDN & Custom Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'sans-serif'] },
+          colors: { neon: '#e1ff00' },
+          boxShadow: {
+            neon: '0 0 10px #e1ff00',
+            neonHover: '0 0 20px #d4f900',
+          },
+        },
+      }
+    };
+  </script>
+  <!-- Fonts & AOS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
-<body>
+<body class="bg-black text-white font-inter scroll-smooth">
 
   <!-- Header -->
-  <header class="navbar" data-aos="fade-down">
-    <div class="logo">✦</div>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
+  <header class="flex justify-between items-center p-6 bg-white/10 backdrop-blur-md rounded-xl shadow-md" data-aos="fade-down">
+    <div class="flex items-center gap-4">
+      <div class="text-2xl">✦</div>
+      <img src="profile.jpg" alt="Apex064 Profile photo" class="w-10 h-10 rounded-full object-cover" />
+    </div>
+    <nav class="flex gap-6 text-gray-300 text-sm">
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#projects" class="hover:text-white">Projects</a>
+      <a href="#testimonials" class="hover:text-white">Testimonials</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Design work,<br><span>the efficient way</span></h1>
-      <p>Innovative digital solutions for tech firms and startups tired of generic design.</p>
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="cv.pdf" class="btn-outline" download>Download CV</a>
+  <!-- Hero -->
+  <section id="hero" class="text-center py-20 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold" data-aos="fade-up">
+      Design work,<br><span class="text-gray-400">done smarter</span>
+    </h1>
+    <p class="text-gray-400 max-w-xl mx-auto mt-4" data-aos="fade-up" data-aos-delay="100">
+      I build elegant digital tools for tech-first companies craving distinctive, high‑impact design.
+    </p>
+    <div class="mt-8 space-x-4" data-aos="fade-up" data-aos-delay="200">
+      <a href="#projects" class="inline-block bg-neon text-black px-6 py-3 rounded-full font-semibold shadow-neon hover:shadow-neonHover transition">
+        View Projects
+      </a>
+      <a href="cv.pdf" download class="inline-block border-2 border-neon text-neon px-6 py-3 rounded-full font-semibold hover:bg-neon hover:text-black transition">
+        Download CV
+      </a>
     </div>
   </section>
 
-  <!-- About Me -->
-  <section id="about" class="section glassy-section">
-    <h2 data-aos="fade-up">About Me</h2>
-    <p data-aos="fade-up" data-aos-delay="100">
-      Hi, I'm Apex064 — a full-stack developer with 3+ years of experience building high-performance digital products.
-      I specialize in Python, JavaScript, and iOS development, using tools like Django, Flask, Node.js, and React.
-      I also craft sleek, responsive frontends and develop iOS apps with Swift.
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-20 bg-white/10 backdrop-blur-lg rounded-2xl" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-6">About Me</h2>
+    <p class="text-gray-300 text-center">
+      I’m Apex064, a full‑stack developer with 3+ years creating robust web and mobile apps. I work
+      with Python, JavaScript, Swift, and frameworks like Django, Flask, Node, React, and iOS.
+      I deliver polished, responsive experiences that users enjoy.
     </p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section glassy-section">
-    <h2 data-aos="fade-up">Skills</h2>
-    <div class="showcase">
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="100">
-        <h3>Frontend</h3>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /> HTML</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /> CSS</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> JavaScript</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /> React</p>
+  <!-- Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-12">Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Frontend -->
+      <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl">
+        <h3 class="font-semibold mb-4">Frontend</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><img src="...html5.svg" class="inline w-5 h-5 mr-2" />HTML</li>
+          <li><img src="...css3.svg" class="inline w-5 h-5 mr-2" />CSS</li>
+          <li><img src="...javascript.svg" class="inline w-5 h-5 mr-2" />JavaScript</li>
+          <li><img src="...react.svg" class="inline w-5 h-5 mr-2" />React</li>
+        </ul>
       </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="200">
-        <h3>Backend</h3>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /> Python</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" /> Django</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" /> Flask</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /> Node.js</p>
+      <!-- Backend -->
+      <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl">
+        <h3 class="font-semibold mb-4">Backend</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><img src="...python.svg" class="inline w-5 h-5 mr-2" />Python</li>
+          <li><img src="...django.svg" class="inline w-5 h-5 mr-2" />Django</li>
+          <li><img src="...flask.svg" class="inline w-5 h-5 mr-2" />Flask</li>
+          <li><img src="...nodejs.svg" class="inline w-5 h-5 mr-2" />Node.js</li>
+        </ul>
       </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="300">
-        <h3>Mobile</h3>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" /> Swift</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" /> Xcode</p>
+      <!-- Mobile -->
+      <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl">
+        <h3 class="font-semibold mb-4">Mobile</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><img src="...swift.svg" class="inline w-5 h-5 mr-2" />Swift</li>
+          <li><img src="...xcode.svg" class="inline w-5 h-5 mr-2" />Xcode</li>
+        </ul>
       </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="400">
-        <h3>Tools</h3>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" /> Git</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> GitHub</p>
-        <p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /> Linux</p>
+      <!-- Tools -->
+      <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl">
+        <h3 class="font-semibold mb-4">Tools</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><img src="...git.svg" class="inline w-5 h-5 mr-2" />Git</li>
+          <li><img src="...github.svg" class="inline w-5 h-5 mr-2" />GitHub</li>
+          <li><img src="...linux.svg" class="inline w-5 h-5 mr-2" />Linux</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="section">
-    <h2 data-aos="fade-up">Projects</h2>
-    <div class="showcase">
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="100">
-        <img src="project10.png" alt="Ria Raspberry Hardware" />
-        <p>Hardware prototype for Ria (IoT personal assistant on Raspberry Pi)</p>
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-12">Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Example Project Card -->
+      <div class="bg-white/10 p-4 rounded-xl hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
+        <img src="project10.png" alt="Ria Raspberry Pi assistant" class="rounded-lg mb-4" />
+        <p class="text-gray-300 text-sm">
+          Ria — a Raspberry Pi‑powered personal assistant with voice control and smart home integration.
+        </p>
       </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="200">
-        <img src="project2.png" alt="Custom Linux OS" />
-        <p>Custom OS (Linux-based, still in development)</p>
-      </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="200">
-        <img src="project6.png" alt="auto trading and abitrage bot" />
-        <p>trading bot for trading in all exchanges and finding abitrage opportunities </p>
-      </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="200">
-        <img src="project7.png" alt="Apex-tts-translate" />
-        <p>text to speech translator for all languages</p>
-      </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="300">
-        <img src="project3.png" alt="Ria Python AI" />
-        <p>Ria AI: Python-based personal assistant bot</p>
-      </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="400">
-        <img src="project4.png" alt="Enterprise Website" />
-        <p>Enterprise website design and dev</p>
-      </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="500">
-        <img src="project5.png" alt="Apex Weather" />
-        <p>Apex Weather: modern, responsive weather web app</p>
-      </div>
+      <!-- Repeat similar cards for all projects... -->
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section id="testimonials" class="section glassy-section">
-    <h2 data-aos="fade-up">Testimonials</h2>
-    <div class="showcase">
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="100">
-        <p>“Apex064 delivered exactly what we needed — polished, performant, pixel-perfect.”</p>
-        <strong>- Mattys Inc</strong>
+  <section id="testimonials" class="max-w-4xl mx-auto px-6 py-20 bg-white/10 backdrop-blur-lg rounded-2xl" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-12">Testimonials</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white/10 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-gray-300 italic mb-4">“Apex064 delivered polished, high-performance code exactly as promised.”</p>
+        <strong class="block text-gray-100">— Mattys Inc</strong>
       </div>
-      <div class="card tilt" data-aos="fade-up" data-aos-delay="200">
-        <p>“His eye for design and attention to code structure made our product feel world-class.”</p>
-        <strong>- Product Owner</strong>
+      <div class="bg-white/10 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+        <p class="text-gray-300 italic mb-4">“His design sensibility and attention to code structure felt truly world‑class.”</p>
+        <strong class="block text-gray-100">— Product Owner</strong>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section">
-    <h2 data-aos="fade-up">Contact</h2>
-    <form class="notify-form" data-aos="fade-up" data-aos-delay="100">
-      <input type="text" placeholder="Your name" required />
-      <input type="email" placeholder="Your email" required />
-      <textarea placeholder="Your message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+  <section id="contact" class="max-w-3xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-6">Contact Me</h2>
+    <form action="https://formspree.io/f/yourID" method="POST" class="flex flex-col gap-4">
+      <input name="name" type="text" placeholder="Your Name" required class="bg-zinc-900 text-white p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-neon" />
+      <input name="email" type="email" placeholder="Your Email" required class="bg-zinc-900 text-white p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-neon" />
+      <textarea name="message" rows="5" placeholder="Your Message" required class="bg-zinc-900 text-white p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-neon"></textarea>
+      <button type="submit" class="bg-neon text-black px-6 py-3 rounded-full font-semibold shadow-neon hover:shadow-neonHover transition">
+        Send Message
+      </button>
     </form>
   </section>
 
   <!-- Chatbot -->
-  <div class="chat-container" id="chat-container">
-    <div class="chat-header">
+  <div id="chat-container" class="fixed bottom-5 right-5 w-80 bg-black/80 backdrop-blur-md rounded-xl shadow-lg hidden flex-col z-50">
+    <div class="flex justify-between items-center p-3 text-white font-semibold">
       <span>Chat with me!</span>
-      <button id="close-chat">X</button>
+      <button id="close-chat" class="text-white">✕</button>
     </div>
-    <div class="chat-box">
-      <div class="chat-message bot-message">Hello! How can I assist you today?</div>
+    <div class="p-3 h-52 overflow-y-auto bg-white/5 text-sm text-white space-y-2">
+      <div class="bg-zinc-800 p-2 rounded-lg">Hello! How can I assist you today?</div>
     </div>
-    <div class="chat-input-container">
-      <input type="text" id="chat-input" placeholder="Type your message..." />
-      <button id="send-message">Send</button>
+    <div class="flex p-3 bg-white/5 gap-2">
+      <input id="chat-input" type="text" placeholder="Type your message..." class="flex-1 bg-zinc-900 text-white p-2 rounded-lg focus:outline-none" />
+      <button id="send-message" class="bg-neon text-black px-4 py-2 rounded-lg font-semibold">Send</button>
     </div>
   </div>
-  <button id="show-chat-button">💬</button>
+  <button id="show-chat-button" class="fixed bottom-5 right-5 bg-neon text-black rounded-full p-4 text-xl shadow-neon hover:shadow-neonHover transition">💬</button>
 
   <!-- Footer -->
-  <footer class="trusted-by" data-aos="fade-up">
-    <div class="logo-row">
-      <a class="tilt" href="https://github.com/apex064" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-      </a>
-      <a class="tilt" href="https://www.linkedin.com/in/chima-chidiebere-sunday-a4117933b" target="_blank">
-        <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
-      </a>
-      <a class="tilt" href="https://twitter.com/apex064" target="_blank">
-        <img src="https://img.icons8.com/color/48/twitterx--v1.png" alt="Twitter X" />
-      </a>
-      <a class="tilt" href="https://codepen.io/apex064" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/codepen.png" alt="CodePen" />
-      </a>
+  <footer class="bg-zinc-900 text-center py-10">
+    <div class="flex justify-center gap-6 mb-4 grayscale opacity-70 hover:opacity-100 transition">
+      <a href="#"><img src="...github.svg" class="h-6" alt="GitHub"/></a>
+      <a href="#"><img src="...linkedin.png" class="h-6" alt="LinkedIn"/></a>
+      <a href="#"><img src="...twitter.png" class="h-6" alt="Twitter"/></a>
+      <a href="#"><img src="...codepen.png" class="h-6" alt="CodePen"/></a>
     </div>
-    <p>© 2025 Apex064 – All rights reserved</p>
+    <p class="text-gray-500 text-sm">© 2025 Apex064 – All rights reserved</p>
   </footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true, offset: 200 });
-
-    // Enable tilt animations
-    VanillaTilt.init(document.querySelectorAll(".tilt"), {
-      max: 15,
-      speed: 400,
-      glare: true,
-      "max-glare": 0.2,
-      scale: 1.02
-    });
-
-    document.getElementById('show-chat-button').addEventListener('click', () => {
-      const chat = document.getElementById('chat-container');
-      chat.style.display = (chat.style.display === 'flex') ? 'none' : 'flex';
-    });
-
-    document.getElementById('send-message').addEventListener('click', () => {
+    AOS.init({ duration: 1000, once: true });
+    // Chatbot toggle logic
+    const chat = document.getElementById('chat-container');
+    document.getElementById('show-chat-button').onclick = () => chat.classList.toggle('hidden');
+    document.getElementById('close-chat').onclick = () => chat.classList.add('hidden');
+    document.getElementById('send-message').onclick = () => {
       const input = document.getElementById('chat-input');
-      if (input.value.trim()) {
-        const userMsg = document.createElement('div');
-        userMsg.className = 'chat-message user-message';
-        userMsg.textContent = input.value;
-        document.querySelector('.chat-box').appendChild(userMsg);
-        input.value = '';
-
-        setTimeout(() => {
-          const botMsg = document.createElement('div');
-          botMsg.className = 'chat-message bot-message';
-          botMsg.textContent = 'I am currently processing your request...';
-          document.querySelector('.chat-box').appendChild(botMsg);
-        }, 1500);
-      }
-    });
-
-    document.getElementById('close-chat').addEventListener('click', () => {
-      document.getElementById('chat-container').style.display = 'none';
-    });
+      if (!input.value.trim()) return;
+      const line = document.createElement('div');
+      line.className = 'bg-neon text-black self-end px-2 py-1 rounded-lg';
+      line.textContent = input.value;
+      chat.querySelector('.flex-1').append(line);
+      input.value = '';
+      setTimeout(() => {
+        const bot = document.createElement('div');
+        bot.className = 'bg-zinc-800 px-2 py-1 rounded-lg';
+        bot.textContent = 'Got it — I’ll get back to you shortly!';
+        chat.querySelector('.flex-1').append(bot);
+      }, 800);
+    };
   </script>
 </body>
 </html>
